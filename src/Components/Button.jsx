@@ -7,6 +7,7 @@ const Button = ({image,imagediv,imageStyle, divstyle, btnStyle, btnname, type, o
         className={divstyle}
         type={type}
         onClick={onPress}
+        
         disabled={disabled}
       >
         {image ?
