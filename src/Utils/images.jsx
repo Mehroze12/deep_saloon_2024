@@ -82,7 +82,7 @@ const imageNames = [
     "aboutmodaltwo",
     "aboutmodalthree",
     "aboutherobanner",
-    "aboutpridalone",
+    "aboutp ridalone",
     "aboutpridaltwo",
     "facebookwhiteicon",
     "ytbbutton",
@@ -118,6 +118,12 @@ const imageNames = [
     "locaticon",
     "slogan",
     "logo",
+
+    // Auth Images
+    "auth_success",
+    "auth_lock",
+    "auth_radio",
+    "auth_message"
 ];
 
 

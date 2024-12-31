@@ -71,7 +71,7 @@ const PrivacyContent = () => {
                                                         : (
                                                             bullet.subhead && bullet.para ? (
                                                                 <p className="text-white font-bold text9">{bullet.subhead}
-                                                                    <span className="text-white text9 pt-[2px] pl-[2px] md:pl-2">{bullet.para}</span>
+                                                                    <span className="text-white text9 font-normal pt-[2px] pl-[2px] md:pl-2">{bullet.para}</span>
                                                                 </p>
                                                             ) :
                                                                 <span className="text-white text9 pt-[2px] pl-[2px] md:pl-2">{bullet.para}</span>

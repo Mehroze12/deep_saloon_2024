@@ -8,60 +8,63 @@
 
 @layer utilities {
   .mainheading {
-    @apply lg:text-[101px] md:text-[80px] text-[40px] font-medium;
+    @apply lg:text-[101px] md:text-[80px] text-[40px] lg:leading-[120px] md:leading-[92px] sm:leading-[45px];
   }
   .subheading {
-    @apply lg:text-[90px] md:text-[50px] text-[30px];
+    @apply lg:text-[90px] md:text-[50px] text-[30px] lg:leading-[110px] md:leading-[82px] sm:leading-[38px];
   }
   .preheading {
-    @apply lg:text-[75px] md:text-[45px] text-[25px];
+    @apply lg:text-[75px] md:text-[45px] text-[25px] lg:leading-[95px] md:leading-[70px] sm:leading-[36px];
   }
   .heading1 {
-    @apply lg:text-[59px] md:text-[35px] text-[25px];
+    @apply lg:text-[59px] md:text-[35px] text-[25px] lg:leading-[86px] md:leading-[62px] sm:leading-[38px];
   }
   .heading2 {
-    @apply lg:text-[50px] md:text-[30px] text-[20px];
+    @apply lg:text-[55px] md:text-[30px] text-[20px] lg:leading-[75px] md:leading-[54px] sm:leading-[32px];
   }
   .heading3 {
-    @apply lg:text-[55px] md:text-[30px] text-[20px];
+    @apply lg:text-[50px] md:text-[30px] text-[20px] lg:leading-[68px] md:leading-[48px] sm:leading-[24px];
   }
   .text1 {
-    @apply lg:text-[46px] md:text-[28px] text-[20px];
+    @apply lg:text-[46px] md:text-[28px] text-[20px] lg:leading-[64px] md:leading-[44px] sm:leading-[20px];
   }
   .text2 {
-    @apply lg:text-[40px] md:text-[24px] text-[18px];
+    @apply lg:text-[40px] md:text-[24px] text-[18px] lg:leading-[56px] md:leading-[40px] sm:leading-[22px];
   }
   .text3 {
-    @apply lg:text-[38px] md:text-[24px] text-[18px];
+    @apply lg:text-[38px] md:text-[24px] text-[18px] lg:leading-[48px] md:leading-[40px] sm:leading-[20px];
   }
   .text4 {
-    @apply lg:text-[35px] md:text-[22px] text-[16px];
+    @apply lg:text-[35px] md:text-[22px] text-[16px] lg:leading-[44x] md:leading-[36px] sm:leading-[19px];
   }
   .text5 {
-    @apply lg:text-[31px] md:text-[20px] text-[14px];
+    @apply lg:text-[31px] md:text-[20px] text-[14px] lg:leading-[38x] md:leading-[32px] sm:leading-[18px];
   }
   .text6 {
-    @apply lg:text-[28px] md:text-[18px] text-[12px];
+    @apply lg:text-[28px] md:text-[18px] text-[12px] lg:leading-[40x] md:leading-[30px] sm:leading-[16px];
   }
   .text7 {
-    @apply lg:text-[25px] md:text-[17px] text-[11px];
+    @apply lg:text-[24px] md:text-[17px] text-[12px] lg:leading-[38x] md:leading-[32px] sm:leading-[16px];
   }
   .text8 {
-    @apply lg:text-[22px] md:text-[15px] text-[11px];
+    @apply lg:text-[22px] md:text-[15px] text-[11px] lg:leading-[34x] md:leading-[28px] sm:leading-[15px];
   }
   .text9 {
-    @apply lg:text-[20px] md:text-[14px] text-[10px];
+    @apply lg:text-[20px] md:text-[14px] text-[10px] lg:leading-[29x] md:leading-[26px] sm:leading-[14px];
   }
   .text10 {
-    @apply lg:text-[18px] md:text-[13px] text-[10px];
+    @apply lg:text-[18px] md:text-[13px] text-[10px] lg:leading-[28x] md:leading-[25px] sm:leading-[14px];
   }
   .text11 {
-    @apply lg:text-[15px] md:text-[12px] text-[9px];
+    @apply lg:text-[15px] md:text-[12px] text-[9px] lg:leading-[23x] md:leading-[18px] sm:leading-[13px];
   }
   .text12 {
-    @apply lg:text-[13px] md:text-[9px] text-[7px];
+    @apply lg:text-[13px] md:text-[9px] text-[8px] lg:leading-[22x] md:leading-[17px] sm:leading-[12px];
   }
- 
+  .text13 {
+    @apply lg:text-[10px] md:text-[8px] text-[8px] lg:leading-[18x] md:leading-[15px] sm:leading-[8px];
+  }
+
   ul {
     list-style-type: none;
   }
@@ -71,5 +74,62 @@
     margin-right: 8px;
     color: #fff;  /* Adjust the color of the bullet */
   }
-  
+}
+
+/* .custom-scrollbar {
+  overflow-y: scroll;
+  scrollbar-width: 0.1px;  
+  -ms-overflow-style: none;  
+ }
+
+.custom-scrollbar::-webkit-scrollbar { 
+  -webkit-appearance: none; 
+  height: 3px;
+}
+ 
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+ }
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+
+} */
+ /* Default for all screens (mobile) - No overflow and no custom scrollbar */
+.custom-scrollbar {
+  overflow: visible; /* Allow content to be fully visible */
+}
+
+/* For medium and larger screens - Enable overflow and custom scrollbar */
+@media (min-width: 768px) {
+  .custom-scrollbar {
+    overflow-y: scroll;
+    scrollbar-width: 0.1px; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer/Edge */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    -webkit-appearance: none;
+    height: 3px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+  }
 }

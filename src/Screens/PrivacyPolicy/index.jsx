@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
   return (
     <div className='bg-secondaryColor'>
       <TopHeader name="Privacy Policy"/> 
-      <PrivacyContent/>
+      <PrivacyContent /> 
     </div>
   )
 }

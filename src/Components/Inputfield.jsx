@@ -18,8 +18,8 @@ const Inputfield = ({
   maxLength,
   pattern,
   innerDiv,
-  leadingImage, // New prop for the image
-  imageStyle, // Optional: Style for the image
+  leadingImage, 
+  imageStyle, 
 }) => {
   return (
     <div className={divstyle}>

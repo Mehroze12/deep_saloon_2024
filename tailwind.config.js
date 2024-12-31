@@ -29,6 +29,7 @@ export default {
         gray: "#343434",
         lightblack: "#061C3D",
         text: "#CACACA",
+        lableColor: "#A2A2A2"
       },
       boxShadow: {
         shadow1: "0 10px 50px -10px rgba(0, 0, 0, 0.3)",
