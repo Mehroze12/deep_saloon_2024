@@ -13,6 +13,12 @@ import SetPassword from "../../Screens/Auth/setPassword";
 import ForgotPassword from "../../Screens/Auth/ForgotPassword";
 import Email from "../../Screens/Auth/email";
 import Otp from "../../Screens/Auth/otp";
+import HairCare from "../../Screens/Services/Hair-Care";
+import SkinCare from "../../Screens/Services/Skin-Care";
+import Favorites from "../../Screens/Services/Favorite";
+import InnerPage from "../../Screens/Services/innerpage/Inner-Page";
+import BookAppointment from "../../Screens/BookAppointment";
+import Cart from "../../Screens/Cart/Cart";
 
 export const router = createBrowserRouter([
   
@@ -47,9 +53,6 @@ export const router = createBrowserRouter([
     path: "/otp", 
     element: <Otp />,
   },
-
-
-
   {
     path: "/about",
     element: <AboutUs />,
@@ -79,7 +82,30 @@ export const router = createBrowserRouter([
     path: "/checkout/*",
     element: <Index />,
   },
-
+  {
+    path: "/service/hair-care",
+    element: <HairCare />,
+  },
+  {
+    path: "/service/skin-care",
+    element: <SkinCare />,
+  },
+  {
+    path: "/service/favorite",
+    element: <Favorites />,
+  },
+  {
+    path: "/service/inner-page",
+    element: <InnerPage />,
+  },
+  {
+    path: "/book-appointment",
+    element: <BookAppointment />,
+  },
+  {
+    path: "/cart",
+    element: <Cart />,
+  },
   
   
 ]);

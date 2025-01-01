@@ -2,6 +2,7 @@ import React from "react";
 import { IMAGES } from "../../Utils/images";
 import About_Card from "./Components/About_Card";
 import { NeetToCancel } from "../../Utils/DummyData";
+import Carousel from "../../Components/carosuel/carousel";
 
 const AboutUs = () => {
   const paragraph =
@@ -62,6 +63,7 @@ const AboutUs = () => {
             </div>
           ))}
         </div>
+        <Carousel />
       </div>
     </div>
   );
